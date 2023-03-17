@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 public class CWE125 {
    int[] arr = new int[5];

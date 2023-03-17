@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 public class CWE190 {
   void integerWraparound() {
