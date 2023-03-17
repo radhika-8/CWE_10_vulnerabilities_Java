@@ -8,7 +8,7 @@ public class CWE125 {
       arr[i] = i;
     }
     for (int i = 0 ; i <= 5 ; i++) {
-      System.out.println(arr[i]);
+      System.out.println(arr[i]); // Out of bound read. (0 <= i < 5)
     }
   }
 
@@ -19,7 +19,7 @@ public class CWE125 {
         arr[i] = i;
       }
       for (int i = 0 ; i <= 5 ; i++) {
-        if( i <= arr.length) {
+        if( i <= arr.length) { // checking whether the length of the array is correct or not.
           System.out.println(arr[i]);
         }
       }

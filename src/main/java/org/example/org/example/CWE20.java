@@ -18,7 +18,7 @@ public class CWE20 {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the quantity: ");
     int quantity = sc.nextInt();
-    if (quantity >= 0) {
+    if (quantity >= 0) { // Validating whether the quantity is positive or not
       double total = price * quantity;
       System.out.println("Total: "+total);
     } else {

@@ -1,8 +1,10 @@
 package org.example;
 
+import java.io.FileNotFoundException;
+
 public class Main {
-  public static void main(String[] args) {
-//
+  public static void main(String[] args) throws FileNotFoundException {
+
 //    //Out-of-bounds Write
 //    org.example.CWE787 cwe787;
 //    cwe787 = new org.example.CWE787();
@@ -44,8 +46,13 @@ public class Main {
 //    cwe22.restrictedDirectoryPathNonComplaint();
 
     //Exposure to sensitive data to unauthorized Actor
-    org.example.CWE200 cwe200 = new org.example.CWE200();
-    cwe200.sensitiveDataExposure();
+//    org.example.CWE200 cwe200 = new org.example.CWE200();
+//    cwe200.sensitiveDataExposure();
 //    cwe200.sensitiveDataExposureNonComplaint();
+
+    //Deserialization of Untrusted Data
+    CWE502 cwe502 = new CWE502();
+    cwe502.deserializationOfData();
+    cwe502.deserializationOfDataNonComplaint();
   }
 }

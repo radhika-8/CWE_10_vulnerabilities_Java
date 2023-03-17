@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CWE416 {
-
+  //Use after free
   void showArrayListNull() {
     List<String> stringList = new ArrayList<>();
     stringList.add("String 1");
