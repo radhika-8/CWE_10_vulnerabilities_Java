@@ -1,10 +1,16 @@
 package org.example;
 
 public class CWE476 {
+   String str = null;
 
    void nullPointerDereference() {
-     String str = null;
-     int length = str.length();
-     System.out.println(length);
+     System.out.println(str);
+   }
+
+   void nullPointerDereferenceNonComplaint() {
+     if (str != null)
+       System.out.println(str);
+     else
+       System.out.printl("The string is null.");
    }
 }

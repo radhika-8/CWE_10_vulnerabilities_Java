@@ -8,11 +8,15 @@ import java.io.ObjectInputStream;
 public class CWE502 {
   void deserializationOfData() throws FileNotFoundException {
     try {
-      ObjectInputStream in = new ObjectInputStream(new FileInputStream("serialised_object.daat"));
+      ObjectInputStream in = new ObjectInputStream(new FileInputStream("serialised_object.ser"));
+      Object obj = in.readObject();
+      in.close();
 
-    } catch (IOException e) {
-      throw new RuntimeException(e);
+    } catch (Exception e) {
+      e.printStackTrace();
     }
   }
+
+
 
 }
