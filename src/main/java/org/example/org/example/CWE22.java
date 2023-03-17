@@ -18,11 +18,11 @@ public class CWE22 {
     String restrictedDirectory = "";
     String fileName = "";
     File file = new File(restrictedDirectory + fileName);
-    if(!file.startsWith(restrictedDir)) {
-      throw new SecurityException("Access to file is not allowed.")
-    }
+//    if(!file.startsWith("restrictedDir")) {
+//      throw new SecurityException("Access to file is not allowed.");
+//    }
 
-    if(fil.exists()) {
+    if(file.exists()) {
       //
     } else {
       System.out.println("File not found.");

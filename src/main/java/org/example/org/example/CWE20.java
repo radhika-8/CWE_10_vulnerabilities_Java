@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CWE20 {
   void improperInputValidation() {
-    public static final double price = 20.00;
+    final double price = 20.00;
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the quantity: ");
     int quantity = sc.nextInt();
@@ -14,11 +14,12 @@ public class CWE20 {
   }
 
   void properInputValidation() {
-    public static final double price = 20.00;
+    final double price = 20.00;
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the quantity: ");
     int quantity = sc.nextInt();
     if (quantity >= 0) {
+      double total = price * quantity;
       System.out.println("Total: "+total);
     } else {
       System.out.println("Please enter a valid input.");

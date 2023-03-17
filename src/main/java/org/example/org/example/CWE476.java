@@ -11,6 +11,6 @@ public class CWE476 {
      if (str != null)
        System.out.println(str);
      else
-       System.out.printl("The string is null.");
+       System.out.println("The string is null.");
    }
 }
